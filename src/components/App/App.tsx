@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import { Container, Grid, Paper } from "@material-ui/core";
 import NewRequest from "../NewRequest/NewRequest";
+import CheckRequest from "../CheckRequest/CheckRequest";
 
 const App: React.FC = () => {
   return (
@@ -13,9 +14,7 @@ const App: React.FC = () => {
             <NewRequest />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Paper className="paper">
-              <h2 className="paper__heading">Узнать статус заказа:</h2>
-            </Paper>
+            <CheckRequest />
           </Grid>
         </Grid>
       </Container>
